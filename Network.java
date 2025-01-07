@@ -121,10 +121,10 @@ public class Network {
         String result = "Network:";
         for (int i = 0; i < userCount; i++) {
            if (users[i] != null) {
-                result += "\n" + users[i].getName() + " ->";
+                result += "\n" + users[i].getName() + " -> ";
                 if (users[i].getfCount() > 0) {
                     for (int j = 0; j < users[i].getfCount(); j++) {
-                        result += " " + users[i].getfFollows()[j] + " ";
+                        result += users[i].getfFollows()[j] + " ";
                     }
                 }
             }

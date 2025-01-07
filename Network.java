@@ -124,7 +124,7 @@ public class Network {
                 result += "\n" + users[i].getName() + " ->";
                 if (users[i].getfCount() > 0) {
                     for (int j = 0; j < users[i].getfCount(); j++) {
-                        result += " " + users[i].getfFollows()[j];
+                        result += " " + users[i].getfFollows()[j] + " ";
                     }
                 }
             }
